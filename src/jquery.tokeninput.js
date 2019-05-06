@@ -652,6 +652,7 @@
               token_list.children().each(function () {
                   var existing_token = $(this);
                   var existing_data = $.data(existing_token.get(0), "tokeninput");
+                  console.log(existing_data, settings, settings.tokenValue);
                   if(existing_data && existing_data[settings.tokenValue] === item[settings.tokenValue]) {
                       found_existing_token = existing_token;
                       return false;
